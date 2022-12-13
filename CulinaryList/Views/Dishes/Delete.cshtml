@@ -1,0 +1,34 @@
+﻿@model CulinaryList.Models.Dish
+
+<h1>Edit a Dish</h1>
+
+<div class="col-6">
+    <form method="post">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Name</label>
+            <input class="form-control" id="formGroupExampleInput" placeholder="Enter the name of the dish (e.g. &#34Chicken Tamales&#34)" asp-for="Name">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Cuisine</label>
+            <input class="form-control" id="formGroupExampleInput2" placeholder="Enter the cuisine of the dish (e.g. &#34Mexican&#34)" asp-for="Cuisine">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Rating</label>
+            <select asp-for="Rating" class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input type="submit" value="Update" class="btn btn-info form-control" id="formGroupExampleInput4">
+            </div>
+            <div class="col-6">
+                <a class="btn btn-secondary form-control" id="formGroupExampleInput4">Back to Home</a>
+            </div>
+        </div>
+    </form>
+</div>
